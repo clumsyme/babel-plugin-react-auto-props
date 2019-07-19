@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-auto-props",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "auto add props to React component",
   "main": "dist/index.js",
   "scripts": {
@@ -12,7 +12,11 @@
     "url": "git+https://github.com/clumsyme/babel-plugin-react-auto-props.git"
   },
   "keywords": [
-    "plugin"
+    "babel",
+    "plugin",
+    "react",
+    "props",
+    "auto"
   ],
   "author": "Li Yan",
   "license": "MIT",
