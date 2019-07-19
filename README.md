@@ -114,7 +114,7 @@ var button = _react.default.createElement(
 
 ## Should I use it?
 
-This is an experimental project, and auto add props to React Component is anti-pattern. You should consider to use [Composing Components](https://reactjs.org/docs/components-and-props.html#composing-components) in production. However, it's all up to you.
+This is an experimental project, and auto add props to React Component is anti-pattern. You should consider to use [Specialization](https://reactjs.org/docs/composition-vs-inheritance.html#specialization) in production. However, it's all up to you.
 
 ## License
 

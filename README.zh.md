@@ -114,7 +114,7 @@ var button = _react.default.createElement(
 
 ## 我应该使用它吗？
 
-这是一个实验性的项目，自动给 React 组件添加属性是很反模式的。生产中应首先考虑使用[组合组件](https://zh-hans.reactjs.org/docs/components-and-props.html#composing-components)来实现需求，当然，这都取决于你。
+这是一个实验性的项目，自动给 React 组件添加属性是很反模式的。生产中应首先考虑使用[特例关系组件](https://zh-hans.reactjs.org/docs/composition-vs-inheritance.html#specialization)来实现需求，当然，这都取决于你。
 
 ## 许可协议
 
