@@ -1,8 +1,8 @@
 {
   "name": "babel-plugin-react-auto-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "auto add props to React component",
-  "main": "/dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "compile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
