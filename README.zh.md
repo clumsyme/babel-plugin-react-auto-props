@@ -1,13 +1,13 @@
 # babel-plugin-react-auto-props
 
-English | [中文](/README.zh.md)
+[English]((./README.zh.md)) | 中文
 
-## What's this?
+## 这是什么
 
-This is babel plugin which auto add props to you React Component based on your component type.
+这是一个根据组件类型自动为你的 React 组件添加属性的 babel 插件。
 
 ```jsx
-// what we write
+// 我们写的代码
 <div>
     <button>Click me</button>
     <p>Hello world</p>
@@ -15,7 +15,7 @@ This is babel plugin which auto add props to you React Component based on your c
 
 // ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙
 
-// what we get after compile
+// 编译后我们得到的代码
 <div>
     <button className="my-button">Click me</button>
     <p 
@@ -29,24 +29,24 @@ This is babel plugin which auto add props to you React Component based on your c
 </div>
 ```
 
-## How can I use it?
+## 怎么使用
 
-Firstly, install it from npm:
+首先从 npm 安装：
 
 ```
 npm install -D babel-plugin-react-auto-props
 ```
 
-Secondly, use it in you babel config:
+然后，添加到你的 babel 配置文件内：
 
 ```js
 // babel.config.js
 const plugins = [
-    // ...your other babel plugins
+    // ...其他 babel 插件
     [
         'babel-plugin-react-auto-props',
         {
-            button: {
+            Button: {
                 className: 'my-button',
             },
             p: {
@@ -60,11 +60,11 @@ const plugins = [
 ]
 ```
 
-That's it.
+即可工作.
 
-## What's the result of the plugin
+## 插件运行代码结果是什么样的？
 
-Given the following React element
+对于如下的 React 元素：
 
 ```jsx
 let button = (
@@ -75,7 +75,7 @@ let button = (
 )
 ```
 
-We will get:
+使用该插件后我们会得到：
 
 ```js
 var button = _react.default.createElement(
@@ -112,11 +112,11 @@ var button = _react.default.createElement(
 )
 ```
 
-## Should I use it?
+## 我应该使用它吗？
 
-This is an experimental project, and auto add props to React Component is anti-pattern. You should consider to use [Composing Components](https://reactjs.org/docs/components-and-props.html#composing-components) in production. However, it's all up to you.
+这是一个实验性的项目，自动给 React 组件添加属性是很反模式的。生产中应首先考虑使用[组合组件](https://zh-hans.reactjs.org/docs/components-and-props.html#composing-components)来实现需求，当然，这都取决于你。
 
-## License
+## 许可协议
 
 MIT
 
