@@ -4,7 +4,7 @@ English | [中文](/README.zh.md)
 
 ## What's this?
 
-This is babel plugin which auto add props to you React Component based on your component type.
+This is a babel plugin which auto adds props to your React Component based on your component type.
 
 ```jsx
 // what we write
