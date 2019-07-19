@@ -9,7 +9,7 @@
 ```jsx
 // 我们写的代码
 <div>
-    <button>Click me</button>
+    <Button>Click me</Button>
     <p>Hello world</p>
 </div>
 
@@ -17,7 +17,7 @@
 
 // 编译后我们得到的代码
 <div>
-    <button className="my-button">Click me</button>
+    <Button className="my-button">Click me</Button>
     <p 
         style={
             color: 'grey',
@@ -67,9 +67,9 @@ const plugins = [
 对于如下的 React 元素：
 
 ```jsx
-let button = (
+let element = (
     <div>
-        <button>Click me</button>
+        <Button>Click me</Button>
         <p>Hello world</p>
     </div>
 )
@@ -78,7 +78,7 @@ let button = (
 使用该插件后我们会得到：
 
 ```js
-var button = _react.default.createElement(
+var element = _react.default.createElement(
     'div',
     null,
     _react.default.createElement(

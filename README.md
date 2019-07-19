@@ -9,7 +9,7 @@ This is a babel plugin which auto adds props to your React Component based on yo
 ```jsx
 // what we write
 <div>
-    <button>Click me</button>
+    <Button>Click me</Button>
     <p>Hello world</p>
 </div>
 
@@ -17,7 +17,7 @@ This is a babel plugin which auto adds props to your React Component based on yo
 
 // what we get after compile
 <div>
-    <button className="my-button">Click me</button>
+    <Button className="my-button">Click me</Button>
     <p 
         style={
             color: 'grey',
@@ -46,7 +46,7 @@ const plugins = [
     [
         'babel-plugin-react-auto-props',
         {
-            button: {
+            Button: {
                 className: 'my-button',
             },
             p: {
@@ -67,9 +67,9 @@ That's it.
 Given the following React element
 
 ```jsx
-let button = (
+let element = (
     <div>
-        <button>Click me</button>
+        <Button>Click me</Button>
         <p>Hello world</p>
     </div>
 )
@@ -78,7 +78,7 @@ let button = (
 We will get:
 
 ```js
-var button = _react.default.createElement(
+var element = _react.default.createElement(
     'div',
     null,
     _react.default.createElement(
