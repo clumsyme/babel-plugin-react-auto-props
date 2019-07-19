@@ -1,6 +1,6 @@
 # babel-plugin-react-auto-props
 
-[English]((./README.zh.md)) | 中文
+[English]((/README.md)) | 中文
 
 ## 这是什么
 
