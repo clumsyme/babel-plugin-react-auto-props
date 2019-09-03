@@ -12,6 +12,8 @@ export default function() {
                 if (
                     !(
                         types.isMemberExpression(callee) &&
+                        types.isIdentifier(callee.object) &&
+                        callee.object.name === 'React' &&
                         types.isIdentifier(callee.property) &&
                         callee.property.name === 'createElement'
                     )
