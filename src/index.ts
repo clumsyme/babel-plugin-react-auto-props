@@ -44,6 +44,8 @@ export default function() {
                 // if the default props is null(empty)
                 if (types.isNullLiteral(propsExpression)) {
                     path.node.arguments[1] = extraPropsExpression
+                } else if (types.isCallExpression(propsExpression)) {
+                    path.node.arguments[1] = types.arrayExpression([propsExpression, extraPropsExpression]);
                 } else {
                     path.node.arguments[1] = types.objectExpression(
                         (<types.ObjectExpression>propsExpression).properties.concat(
@@ -51,6 +53,7 @@ export default function() {
                         ),
                     )
                 }
+                console.log(123)
             },
         },
     }
