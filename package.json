@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-auto-props",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "auto add props to React component",
   "main": "dist/index.js",
   "scripts": {
